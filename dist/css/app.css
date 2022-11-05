@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 70%;
+  margin: 0 auto;
+}
+header h1 {
+  color: #4832D5;
+  font-size: 45px;
+  font-weight: 700;
+}
+header .add-task {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+}
+header .add-task #texto-tarefa {
+  border: none;
+  border-bottom: 2px solid gray;
+  background-color: transparent;
+  padding: 5px 20px;
+  color: #4832D5;
+  font-size: 20px;
+}
+header .add-task #texto-tarefa::-moz-placeholder {
+  color: #4832D5;
+}
+header .add-task #texto-tarefa:-ms-input-placeholder {
+  color: #4832D5;
+}
+header .add-task #texto-tarefa::placeholder {
+  color: #4832D5;
+}
+header .add-task #texto-tarefa:focus-visible {
+  outline: none;
+}
+header p {
+  margin-top: 5px;
+  color: #776258;
+}
+header button {
+  width: 200px;
+  border-radius: 27px;
+  background-color: #4832D5;
+  border: 2px solid #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 5px 0;
+}
+header button:hover {
+  background-color: #DE4D86;
+}
+
+.active {
+  position: relative;
+}
+.active #texto-tarefa {
+  border: transparent !important;
+}
+.active::before {
+  content: "";
+  position: absolute;
+  margin-top: 1.5px;
+  left: 0;
+  bottom: 0px;
+  width: 0;
+  border-bottom: 2px solid #DE4D86;
+  -webkit-animation: border_anim 0.3s linear forwards;
+          animation: border_anim 0.3s linear forwards;
+}
+@-webkit-keyframes border_anim {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes border_anim {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+main {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+main .tasks {
+  width: 80%;
+}
+main .tasks ol li {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #001514;
+}
+main .tasks ol li::marker {
+  color: #DE4D86;
+}
+main .buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+main button {
+  border-radius: 27px;
+  background-color: #4832D5;
+  border: 2px solid #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: #fff;
+  margin: 0 10px;
+}
+main button:hover {
+  background-color: #DE4D86;
+}
+main #mover-cima {
+  width: 50px;
+  font-size: 28px;
+  font-weight: 700;
+  padding: 2px;
+}
+main #mover-baixo {
+  width: 50px;
+  font-size: 28px;
+  font-weight: 700;
+  padding: 2px;
+}
+main #remover-selecionado {
+  width: 50px;
+  font-size: 28px;
+  padding: 2px;
+}
+main #apaga-tudo {
+  width: 180px;
+  font-size: 20px;
+  padding: 5px 0;
+}
+main #remover-finalizados {
+  width: 200px;
+  font-size: 20px;
+  padding: 5px 0;
+}
+main #salvar-tarefas {
+  width: 150px;
+  font-size: 20px;
+  padding: 5px 0;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.clicked {
+  background-color: #4832D5;
+  color: #fff !important;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+body {
+  background-color: #4832D5;
+  height: 100vh;
+  display: flex;
+}
+
+.app {
+  background-color: #CCF281;
+  padding: 50px;
+  width: 80%;
+  margin: auto;
+}/*# sourceMappingURL=app.css.map */

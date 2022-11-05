@@ -1,0 +1,25 @@
+@import 'header';
+@import 'main';
+@import 'config';
+
+.clicked {
+  background-color: $primary-color;
+  color: #fff !important;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+body {
+  background-color: $primary-color;
+  height: 100vh;
+  display: flex;
+}
+
+.app {
+  background-color: $secondary-color;
+  padding: 50px;
+  width: 80%;
+  margin: auto;
+}

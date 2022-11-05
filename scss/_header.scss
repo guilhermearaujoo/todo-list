@@ -1,0 +1,84 @@
+@import 'config';
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 70%;
+  margin: 0 auto;
+
+  h1 {
+    color: $primary-color;
+    font-size: 45px;
+    font-weight: 700;
+  }
+
+  .add-task {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+
+    #texto-tarefa {
+      border: none;
+      border-bottom: 2px solid gray;
+      background-color: transparent;
+      padding: 5px 20px;
+      color: $primary-color;
+      font-size: 20px;
+
+      &::placeholder {
+        color: $primary-color;
+      }
+
+      &:focus-visible {
+        outline: none;
+      }
+    }
+  }
+
+  p {
+    margin-top: 5px;
+    color: $inative-color;
+  }
+
+  button {
+    width: 200px;
+    @include buttonStyle;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 5px 0;
+
+    &:hover {
+      background-color: $header-color;
+    }
+  }
+}
+
+.active {
+  position: relative;
+
+  #texto-tarefa {
+    border: transparent !important;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    margin-top: 1.5px;
+    left: 0;
+    bottom: 0px;
+    width: 0;
+    border-bottom: 2px solid $header-color;
+    animation: border_anim 0.3s linear forwards;
+  }
+
+  @keyframes border_anim {
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 100%;
+    }
+  }
+}

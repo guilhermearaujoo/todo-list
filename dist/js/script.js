@@ -120,7 +120,6 @@ window.onload = () => {
   window.addEventListener("click", (event) => {
     // create tasks 
     if (event.target.id === "criar-tarefa") {
-      //gets task list
       const taskList = document.getElementById("lista-tarefas");
       submitItem(taskList);
     }
@@ -170,5 +169,10 @@ window.onload = () => {
       if(selected) removeSelected(selected);
     };
     
+    //gives moviment to border
+    if(event.target.id === 'texto-tarefa') {
+      const div = document.getElementsByClassName('div-texto-tarefa')[0];
+      div.classList.add('active'); 
+    }
   });
 };

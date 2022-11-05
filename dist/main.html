@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Todo List</title>
-  <link rel="stylesheet" href="/dist/css/main.css">
-  <script src="/dist/js/script.js" defer></script>
-</head>
-<body>
-  <header id="my-header">
-    <h1>My to do list</h1>
-    <p id="funcionamento">Double click on an item to mark it as done</p>
-    <input type="text" id="texto-tarefa">
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="/dist/css/app.css" />
+    <script src="/dist/js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="app">
+      <header id="my-header">
+        <h1>My to do list</h1>
+        <div class="add-task">
+          <div class="div-texto-tarefa">
+            <input type="text" id="texto-tarefa" placeholder="Add a task!"/>
+          </div>
+          <button id="criar-tarefa">Add task</button>
+        </div>
+        <p id="funcionamento">Double click on an item to mark it as done</p>
+      </header>
 
-  <main>
-    <div class="tasks">
-      <ol id="lista-tarefas"></ol>
+      <main>
+        <div class="tasks">
+          <ol id="lista-tarefas"></ol>
+        </div>
+        <div class="buttons">
+          <button id="mover-cima">↑</button>
+          <button id="mover-baixo">↓</button>
+          <button id="remover-selecionado">x</button>
+          <button id="apaga-tudo">Remove all</button>
+          <button id="remover-finalizados">Remove all done</button>
+          <button id="salvar-tarefas">Save tasks</button>
+        </div>
+      </main>
     </div>
-    <div class="buttons">
-      <button id="criar-tarefa">Add task</button>
-      <button id="mover-cima">↑</button>
-      <button id="mover-baixo">↓</button>
-      <button id="remover-selecionado">x</button>
-      <button id="apaga-tudo">Remove all</button>
-      <button id="remover-finalizados">Remove all done</button>
-      <button id="salvar-tarefas">Save tasks</button>
-    </div>
-  </main>
-</body>
+  </body>
 </html>
