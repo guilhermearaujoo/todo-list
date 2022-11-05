@@ -171,4 +171,15 @@ window.onload = () => {
       div.classList.add('active'); 
     }
   });
+
+  //gives GSAP moviments to the page
+  let tl = gsap.timeline();
+  
+  tl.to("#criar-tarefa", {x:0, duration: 0.2});
+  tl.to("#salvar-tarefas", {x:0, duration: 0.2});
+  tl.to("#remover-finalizados", {x:0, duration: 0.2});
+  tl.to("#apaga-tudo", {x:0, duration: 0.2});
+  tl.to("#remover-selecionado", {x:0, duration: 0.2});
+  tl.to("#mover-baixo", {x:0, duration: 0.2});
+  tl.to("#mover-cima", {x:0, duration: 0.2});
 };

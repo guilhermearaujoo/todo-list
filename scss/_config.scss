@@ -18,3 +18,11 @@ $inative-color: #776258;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   color: #fff;
 }
+
+@mixin transformX($position) {
+  transform: translateX($position);
+  -webkit-transform: translateX($position);
+  -moz-transform: translateX($position);
+  -ms-transform: translateX($position);
+  -o-transform: translateX($position);
+}

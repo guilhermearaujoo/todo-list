@@ -57,6 +57,11 @@ header button {
   font-size: 20px;
   font-weight: 700;
   padding: 5px 0;
+  transform: translateX(-500px);
+  -webkit-transform: translateX(-500px);
+  -moz-transform: translateX(-500px);
+  -ms-transform: translateX(-500px);
+  -o-transform: translateX(-500px);
 }
 header button:hover {
   background-color: #DE4D86;
@@ -136,32 +141,62 @@ main #mover-cima {
   font-size: 28px;
   font-weight: 700;
   padding: 2px;
+  transform: translateX(-500px);
+  -webkit-transform: translateX(-500px);
+  -moz-transform: translateX(-500px);
+  -ms-transform: translateX(-500px);
+  -o-transform: translateX(-500px);
 }
 main #mover-baixo {
   width: 50px;
   font-size: 28px;
   font-weight: 700;
   padding: 2px;
+  transform: translateX(-600px);
+  -webkit-transform: translateX(-600px);
+  -moz-transform: translateX(-600px);
+  -ms-transform: translateX(-600px);
+  -o-transform: translateX(-600px);
 }
 main #remover-selecionado {
   width: 50px;
   font-size: 28px;
   padding: 2px;
+  transform: translateX(-700px);
+  -webkit-transform: translateX(-700px);
+  -moz-transform: translateX(-700px);
+  -ms-transform: translateX(-700px);
+  -o-transform: translateX(-700px);
 }
 main #apaga-tudo {
   width: 180px;
   font-size: 20px;
   padding: 5px 0;
+  transform: translateX(-800px);
+  -webkit-transform: translateX(-800px);
+  -moz-transform: translateX(-800px);
+  -ms-transform: translateX(-800px);
+  -o-transform: translateX(-800px);
 }
 main #remover-finalizados {
   width: 200px;
   font-size: 20px;
   padding: 5px 0;
+  transform: translateX(-900px);
+  -webkit-transform: translateX(-900px);
+  -moz-transform: translateX(-900px);
+  -ms-transform: translateX(-900px);
+  -o-transform: translateX(-900px);
 }
 main #salvar-tarefas {
   width: 150px;
   font-size: 20px;
   padding: 5px 0;
+  transform: translateX(-1000px);
+  -webkit-transform: translateX(-1000px);
+  -moz-transform: translateX(-1000px);
+  -ms-transform: translateX(-1000px);
+  -o-transform: translateX(-1000px);
 }
 
 * {
