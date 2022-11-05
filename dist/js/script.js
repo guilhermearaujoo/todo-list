@@ -5,7 +5,7 @@ const taskList = document.getElementById('lista-tarefas');
 // changes the backgroundcolor of an item when clicked
 const changeBackground = (li) => {
   li.addEventListener('click', () => {
-    li.style.backgroundColor === 'gray' ? li.style.backgroundColor = 'white' : li.style.backgroundColor = 'gray';
+    li.classList.contains('clicked') ? li.classList.remove('clicked') : li.classList.add('clicked');
   });
 }
 
