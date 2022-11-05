@@ -113,7 +113,7 @@ main .tasks ol li {
   color: #001514;
 }
 main .tasks ol li::marker {
-  color: #DE4D86;
+  color: #4832D5;
 }
 main .buttons {
   display: flex;

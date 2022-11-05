@@ -20,13 +20,10 @@ const setSavedPage = () => {
 };
 
 // changes the backgroundcolor of an item when clicked
-const changeBackground = (lis) => {
-  lis.forEach((element) => {
-    element.addEventListener("click", () => {
-      lis.forEach((li) => li.classList.remove("clicked"));
-      element.classList.add("clicked");
-    });
-  });
+const changeBackground = (element) => {
+  const lis = document.querySelectorAll(".list-item");
+  lis.forEach((li) => li.classList.remove("clicked"));
+  element.classList.add("clicked");
 };
 
 //add elemtents on page
@@ -126,8 +123,7 @@ window.onload = () => {
 
     // changes background 
     if (event.target.classList.contains("list-item")) {
-      const lis = document.querySelectorAll(".list-item");
-      changeBackground(lis);
+      changeBackground(event.target);
     }
 
     // remove all tasks
