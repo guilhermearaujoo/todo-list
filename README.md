@@ -2,7 +2,7 @@
 
 ---
 ## About
-:rocket: This project is a _**To do List**_ customized by me. It has some GSAP cool functionalites. Click on this link [To do list]() and see the page.
+:rocket: This project is a _**To do List**_ customized by me. It has some GSAP cool functionalites. Click on this link [To do list](https://guilhermearaujoo.github.io/todo-list/dist/main.html) and see the page.
 
 ---
 ## Technologies:
